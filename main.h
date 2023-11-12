@@ -6,8 +6,6 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
-int _write(char a);
-int _writeString(char *s);
 int _strlen(char *str);
 
 #endif
