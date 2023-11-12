@@ -12,10 +12,6 @@ int _strLen(char *str)
 	/*initialize string for which to obtain length*/
 	int i = 0;
 
-	/*return error if string is invalid*/
-	if (i == NULL)
-		return (-1);
-
 	/*loop through string to obtain length excluding '\0'*/
 	while (str[i] && str[i] != '\0')
 	{
