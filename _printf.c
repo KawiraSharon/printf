@@ -16,11 +16,9 @@ int _printf(const char *format, ...)
 	char *str;
 	char c;
 
-	va_start (printfString, format);
-
+	va_start(printfString, format);
 	if (!format)
 		return (-1);
-
 	while (format[l] && format[l] != '\0')
 	{
 		if (format[l] != '%')
@@ -50,8 +48,6 @@ int _printf(const char *format, ...)
 			}
 		}
 	}
-
-	va_end (printfString);
-
-	return(printed);
+	va_end(printfString);
+	return (printed);
 }
