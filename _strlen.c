@@ -1,17 +1,23 @@
 #include "main.h"
 
 /**
- * _strlen - check length of string
+ * _strLen - check length of string
  * @str: string to be checked
  *
- * Return: length of string
+ * Return: length of string as initialized
  */
 
-int _strlen(char *str)
+int _strLen(char *str)
 {
+	/*initialize string for which to obtain length*/
 	int i = 0;
 
-	while (str[i])
+	/*return error if string is invalid*/
+	if (i == NULL)
+		return (-1);
+
+	/*loop through string to obtain length excluding '\0'*/
+	while (str[i] && str[i] != '\0')
 	{
 		i++;
 	}

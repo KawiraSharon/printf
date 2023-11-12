@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * _printf - Produces output according to a format
- * @format: the character string
+ * _printf - Produces output following specified format
+ * @format: mandatory arg; character string
  *
- * Return: total number of printed characters or -1 if error
+ * Return: total no. of printed characters on success -1 if error
  */
-
-
 int _printf(const char *format, ...)
 {
 	va_list printfString;
@@ -39,9 +37,9 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					str = va_arg(printfString, char *);
-					write(1, str, _strlen(str));
-					printed += _strlen(str);
-					l += 2;
+					write(1, str, _strLen(str));
+					printed += _strLen(str);
+					l = l + 2;
 					break;
 				default:
 					l++;
