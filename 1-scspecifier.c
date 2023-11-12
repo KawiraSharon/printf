@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	va_list sc_lyst;
 	int sc_count = 0;
 
-	if (format == NULL) 
+	if (format == NULL)
 		return (-1);
 
 	va_start(sc_lyst, format);
