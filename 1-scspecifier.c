@@ -11,11 +11,7 @@ int _printf(const char *format, ...)
 	va_list sc_lyst;
 	int sc_count = 0;
 
-	if (!format || (format[0] == '%' && !format[1]))
-		return (-1);
-	if (format[0] == '%' && format[1] == ' ' && !format[2])
-		return (-1);
-
+	if (format == NULL) 
 		return (-1);
 
 	va_start(sc_lyst, format);
