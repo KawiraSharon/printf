@@ -8,9 +8,6 @@
 #include <string.h>
 #include <limits.h>
 
-#define NULLTOBE "(null)"
-#define NUL '\0'
-
 /**
  * struct match - denote symbol structure
  * @mstruct: operator
