@@ -25,6 +25,10 @@ int find_no(va_list total)
 	int di_len;
 	int div;
 
+	vals = va_arg(total, int);
+	di_len = 0;
+	div = 1;
+
 	if (vals < 0)
 	{
 		di_len += _putchar('-');
