@@ -17,7 +17,7 @@ typedef struct match
 {
 	char mstruct;
 	int (*j)(va_list);
-}init;
+} init;
 
 
 int _printf(const char *format, ...);

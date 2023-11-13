@@ -41,7 +41,7 @@ int spec_result(const char *format, init spec_char[], va_list spec_lyst)
 			else
 				return (-1);
 		}
-		x = x + 1;
+		++x;
 		}
 		else
 		{
