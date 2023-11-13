@@ -19,9 +19,9 @@ int spec_result(const char *format, init spec_char[], va_list spec_lyst)
 	{
 		if (format[x] == '%')
 		{
-			for (y = 0; spec_char[y].mstruct != NULL; y++)
+			for (y = 0; spec_char[y].mstruct != 0; y++)
 			{
-				if (format[x + 1] == spec_char[y].mstruct[0])
+				if (format[x + 1] == spec_char[y].mstruct)
 				{
 					z = spec_char[y].j(spec_lyst);
 					if (z == -1)
@@ -30,7 +30,7 @@ int spec_result(const char *format, init spec_char[], va_list spec_lyst)
 					break;
 				}
 			}
-		if (spec_char[y].mstruct == NULL && format[x + 1] != '')
+		if (spec_char[y].mstruct == 0 && format[x + 1] != ' ')
 		{
 			if (format[x + 1] != '\0')
 			{
