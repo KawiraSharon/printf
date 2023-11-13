@@ -13,8 +13,8 @@ int _printf(const char *format, ...)
 	int spcfr_value;
 	
 	init spec_char[] = {
-		{'d',  my_j_function_for_putdi},
-		{'i', my_j_function_for_putdi},
+		{'d',  putdi},
+		{'i', putdi},
 		{0, NULL},
 	};
 	va_list spec_lyst;
