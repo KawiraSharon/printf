@@ -10,15 +10,15 @@ int specifierRot13(va_list stringList)
 {
 	int i, j, k, total;
 	char *s = va_arg(stringList, char *);
-	char a[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-	char b[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
+	char *a = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char *b = " nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	if (s == NULL)
 		s = "(null)";
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		k = 0;
-		for (j = 0; a[j] != '\n'  && k == 0; j++)
+		for (j = 0; a[j] != '\n' && k == 0; j++)
 		{
 			if (s[i] == a[j])
 			{
