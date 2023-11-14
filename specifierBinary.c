@@ -8,12 +8,13 @@
 
 int specifierBinary(va_list listString)
 {
-	int total, i, j;
+	int a[64], total, i, j;
 	unsigned int num;
-	char a[64] = { 0 };
 
 	num = va_arg(listString, unsigned int);
 
+	if (num == 0)
+		return (0);
 	for  (i = 0; num > 0; i++)
 	{
 		a[i] = num % 2;
