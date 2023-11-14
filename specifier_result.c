@@ -14,6 +14,11 @@ int spec_result(const char *format, init spec_char[], va_list spec_lyst)
 {
 	int x, y, z, spcfr_value;
 
+	if (spec_char == NULL)
+	{
+		return (-1);
+	}
+
 	spcfr_value = 0;
 	for (x = 0; format[x] != '\0'; x++)
 	{
@@ -25,7 +30,9 @@ int spec_result(const char *format, init spec_char[], va_list spec_lyst)
 				{
 					z = spec_char[y].j(spec_lyst);
 					if (z == -1)
+					{
 						return (-1);
+					}
 					spcfr_value += z;
 					break;
 				}
