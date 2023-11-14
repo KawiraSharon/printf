@@ -28,6 +28,6 @@ int char_value(va_list char_list);
 int string_value(va_list stringList);
 int percent_value(va_list);
 int reverse(va_list stringList);
-int print_rot13(va_list stringList);
+int specifierRot13(va_list stringList);
 
 #endif
