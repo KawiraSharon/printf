@@ -29,5 +29,6 @@ int string_value(va_list stringList);
 int percent_value(va_list);
 int reverse(va_list stringList);
 int specifierRot13(va_list stringList);
+int specifierBinary(va_list listString);
 
 #endif
