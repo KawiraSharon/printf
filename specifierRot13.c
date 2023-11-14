@@ -13,6 +13,7 @@ int specifierRot13(va_list stringList)
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
+	fflush(stdout);
 	if (s == NULL)
 		s = "(null)";
 	for (i = 0; s[i]; i++)
@@ -33,6 +34,5 @@ int specifierRot13(va_list stringList)
 			total++;
 		}
 	}
-	fflush(stdout);
 	return (total);
 }
