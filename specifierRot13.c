@@ -14,11 +14,11 @@ int specifierRot13(va_list stringList)
 	char b[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 
 	if (s == NULL)
-		s = "(NULL)";
+		s = "(null)";
 	for (i = 0; s[i]; i++)
 	{
 		k = 0;
-		for (j = 0; a[j]; j++)
+		for (j = 0; a[j] && k == 0; j++)
 		{
 			if (s[i] == a[j])
 			{
