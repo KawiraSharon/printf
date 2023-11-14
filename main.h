@@ -13,7 +13,6 @@
  * @mtc: The operator is denoted here
  * @u: The function associated is denoted here
  */
-
 typedef struct spec_ifier
 {
 	char *mtc;
