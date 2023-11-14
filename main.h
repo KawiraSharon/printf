@@ -8,13 +8,13 @@
 #include <limits.h>
 
 /**
- * struct spec_ifier - defines symbols structure, functions
+ * struct format - defines symbols structure, functions
  *
  * @mtc: operator
  * @u: func associated
  */
 
-typedef struct
+typedef struct format
 {
 	char *mtc;
 	int (*u)(va_list);
