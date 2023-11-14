@@ -33,6 +33,6 @@ int specifierRot13(va_list stringList)
 			total++;
 		}
 	}
-
+	fflush(stdout);
 	return (total);
 }
