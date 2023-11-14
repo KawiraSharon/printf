@@ -15,10 +15,10 @@ int specifierRot13(va_list stringList)
 
 	if (s == NULL)
 		s = "(null)";
-	for (i = 0; s[i]; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		k = 0;
-		for (j = 0; a[j] && k == 0; j++)
+		for (j = 0; a[j] != '\n'  && k == 0; j++)
 		{
 			if (s[i] == a[j])
 			{
