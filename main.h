@@ -34,5 +34,6 @@ int specifierUnsigned(va_list listString);
 int specifierOctal(va_list listString);
 int specifierhex(va_list listString);
 int specifierHEX(va_list listString);
+int specifierS(va_list listString);
 
 #endif
