@@ -8,7 +8,7 @@
 
 int specifierBinary(va_list listString)
 {
-	unsigned int a[10], num, total;
+	unsigned int a[64], num, total;
 	int i, j;
 
 	num = va_arg(listString, unsigned int);
