@@ -8,7 +8,7 @@
 #include <limits.h>
 
 /**
- * struct allocate - defines symbols structure, functions
+ * struct spec_ifier - defines symbols structure, functions
  *
  * @mtc: operator
  * @u: func associated
