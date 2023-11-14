@@ -25,5 +25,8 @@ int _putchar(char c);
 int convert_type(const char *format, spec_ifier form_at[], va_list spec_lyst);
 int write_value(va_list number);
 int di_no(va_list numbers);
+int char_value(va_list char_list);
+int string_value(va_list stringList);
+int percent_value(__attribute((unused))va_list perc_list);
 
 #endif
