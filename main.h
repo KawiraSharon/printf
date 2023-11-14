@@ -30,5 +30,9 @@ int percent_value(va_list);
 int reverse(va_list stringList);
 int specifierRot13(va_list stringList);
 int specifierBinary(va_list listString);
+int specifierUnsigned(va_list listString);
+int specifierOctal(va_list listString);
+int specifierhex(va_list listString);
+int specifierHEX(va_list listString);
 
 #endif

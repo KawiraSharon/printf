@@ -11,7 +11,9 @@ int _printf(const char *format, ...)
 	spec_ifier form_at[] = {
 		{"d", write_value}, {"i", write_value}, {"c", char_value},
 		{"s", string_value}, {"%", percent_value}, {"r", reverse},
-		{"R", specifierRot13}, {"b", specifierBinary},
+		{"R", specifierRot13}, {"b", specifierBinary}, {"u", specifierUnsigned},
+		{"u", specifierUnsigned}, {"o", specifierOctal}, {"h", specifierhex},
+		{"H", specifierHEX},
 		{NULL, NULL}
 	};
 
