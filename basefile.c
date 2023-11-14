@@ -10,7 +10,7 @@ int _printf(const char *format, ...)
 	int type_written;
 	spec_ifier form_at[] = {
 		{"d", write_value}, {"i", write_value}, {"c", char_value},
-		{"s", string_value}, {"%", percent_value}, {"r", reverse}
+		{"s", string_value}, {"%", percent_value}, {"r", reverse},
 		{NULL, NULL}
 	};
 

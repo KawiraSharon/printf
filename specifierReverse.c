@@ -15,8 +15,8 @@ int reverse(va_list stringList)
 	if (s == NULL)
 		s = "(null)";
 	while (s[a] != '\0')
-		j++;
+		a++;
 	for (i = a - 1; i >= 0; i--)
 		_putchar(s[i]);
-	return (j);
+	return (a);
 }
