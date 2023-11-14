@@ -3,7 +3,7 @@
 /**
  * convert_type - function to return total chars
  * @format: mandatory argument
- * @spec_ifier: array of format specifier elements
+ * @form_at: array of format specifier elements
  * @spec_lyst: variable/argument list
  * Return: char count
  */

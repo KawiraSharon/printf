@@ -1,4 +1,5 @@
 *.swp
 file1-dispecifier.c
-main.h
+main.c
+a.out
 filefile
