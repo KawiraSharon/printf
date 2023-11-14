@@ -2,7 +2,7 @@
 
 /**
  * specifierBinary - handle unsigned to binary
- * @n: number to convert
+ * @listString: arguments
  * Return: no of printed characters
  */
 
