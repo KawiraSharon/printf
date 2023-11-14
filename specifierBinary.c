@@ -13,8 +13,8 @@ int specifierBinary(va_list listString)
 
 	num = va_arg(listString, unsigned int);
 
-	if (num == 0)
-		return (0);
+	if (!num)
+		return (-1);
 	for  (i = 0; num > 0; i++)
 	{
 		a[i] = num % 2;
