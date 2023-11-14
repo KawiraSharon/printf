@@ -7,6 +7,7 @@
  */
 int char_value(va_list char_list)
 {
+	fflush(stdout);
 	_putchar(va_arg(char_list, int));
 	return (1);
 }

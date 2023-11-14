@@ -18,6 +18,7 @@ int specifierRot13(va_list stringList)
 		s = "(null)";
 	for (i = 0; s[i]; i++)
 	{
+		fflush(stdout);
 		k = 0;
 		for (j = 0; a[j] && k == 0; j++)
 		{

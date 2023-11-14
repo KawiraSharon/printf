@@ -16,6 +16,7 @@ int reverse(va_list stringList)
 		s = "(null)";
 	while (s[a] != '\0')
 		a++;
+	fflush(stdout);
 	for (i = a - 1; i >= 0; i--)
 		_putchar(s[i]);
 	return (a);
