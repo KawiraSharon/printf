@@ -8,13 +8,12 @@
 #include <limits.h>
 
 /**
- * struct spec_ifier - defines symbols structure, functions
+ * struct spec_ifier - defines structure for symbols and functions
  *
- * @mtc: operator
- * @u: func associated
+ * @mtc: The operator is denoted here
+ * @u: The function associated is denoted here
  */
-
-typedef struct
+typedef struct spec_ifier
 {
 	char *mtc;
 	int (*u)(va_list);
@@ -27,6 +26,6 @@ int write_value(va_list number);
 int di_no(va_list numbers);
 int char_value(va_list char_list);
 int string_value(va_list stringList);
-int percent_value(__attribute((unused))va_list perc_list);
+int percent_value(va_list);
 
 #endif
