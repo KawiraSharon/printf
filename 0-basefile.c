@@ -11,7 +11,7 @@
 int _printf(const char *format, ...)
 {
 	int spcfr_value;
-	
+
 	init spec_char[] = {
 		{'d',  putdi},
 		{'i', putdi},
