@@ -12,7 +12,7 @@ int string_value(va_list stringList)
 
 	ptrStr = va_arg(stringList, char *);
 	if (ptrStr == NULL)
-		ptrStr = "(nil)";
+		ptrStr = "(null)";
 	for (j = 0; ptrStr[j] != '\0'; j++)
 		_putchar(ptrStr[j]);
 	return (j);
