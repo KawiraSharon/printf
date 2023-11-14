@@ -1,29 +1,29 @@
-#ifndef PRINTF_H
-#define PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
-#include <stdarg.h>
-#include <stdlib.h>
-#include <unistd.h>
 #include <stdio.h>
-#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdarg.h>
 #include <limits.h>
 
 /**
- * struct match - denote symbol structure
- * @mstruct: operator
- * @j: function associated
+ * struct allocate - defines symbols structure, functions
+ *
+ * @mtc: operator
+ * @u: func associated
  */
-typedef struct match
-{
-	char mstruct;
-	int (*j)(va_list);
-} init;
 
+typedef struct
+{
+	char *mtc;
+	int (*u)(va_list);
+} spec_ifier;
 
 int _printf(const char *format, ...);
-int spec_result(const char *format, init spec_char[], va_list spec_lyst);
 int _putchar(char c);
-int putdi(va_list lyst);
-int find_no(va_list total);
+int convert_type(const char *format, spec_ifier form_at[], va_list spec_lyst);
+int write_value(va_list number);
+int di_no(va_list numbers);
 
 #endif
