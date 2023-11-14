@@ -8,19 +8,20 @@
 
 int specifierBinary(va_list listString)
 {
-	unsigned int a[64], num, total;
+	unsigned int num, total;
 	int i, j;
+	char buffer[64] = { 0 };
 
 	num = va_arg(listString, unsigned int);
 
 	for (i = 0; num > 0; i++)
 	{
-		a[i] = num % 2;
+		buffer[i++] = num % 2;
 		num = num / 2;
 	}
 	for (j = i - 1; j >= 0; j--)
 	{
-		_putchar(a[j] + '0');
+		_putchar(buffer[j] + '0');
 		total++;
 	}
 

@@ -40,5 +40,10 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%R]\n", "Joseph  Muturi");
     printf("Unknown:[%r]\n");
+    _printf("%b\n", 8);
+	_printf("%b\n", 7);
+	_printf("%b\n", 9);
+	_printf("%b\n", 65536);
+	_printf("%b\n", 0x9000000000000000);
     return (0);
 }
