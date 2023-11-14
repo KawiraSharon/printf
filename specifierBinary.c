@@ -19,7 +19,7 @@ int specifierBinary(va_list listString)
 	{
 		rem = num % 2;
 		num = num / 2;
-		buffer[i++] = binaries[rem];
+		buffer[i] = binaries[rem];
 	}
 	for (j = i - 1; j >= 0; j--)
 	{
