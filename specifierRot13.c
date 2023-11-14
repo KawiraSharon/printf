@@ -8,7 +8,7 @@
 
 int specifierRot13(va_list stringList)
 {
-	int i, j, k, total;
+	int i, j, k = 0, total = 0;
 	char *s = va_arg(stringList, char *);
 	char *a = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char *b = " nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
