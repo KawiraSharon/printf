@@ -9,19 +9,21 @@
 int specifierBinary(va_list listString)
 {
 	unsigned int num, total;
-	int i, j;
+	int i, j, rem;
+	char binaries[] = {"01"};
 	char buffer[64] = { 0 };
 
 	num = va_arg(listString, unsigned int);
 
 	for (i = 0; num > 0; i++)
 	{
-		buffer[i++] = num % 2;
+		rem = num % 2;
 		num = num / 2;
+		buffer[i++] = binaries[rem];
 	}
 	for (j = i - 1; j >= 0; j--)
 	{
-		_putchar(buffer[j] + '0');
+		_putchar(buffer[j]);
 		total++;
 	}
 
