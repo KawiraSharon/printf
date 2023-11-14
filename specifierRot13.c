@@ -25,6 +25,11 @@ int specifierRot13(va_list stringList)
 				total++;
 				break;
 			}
+			else
+			{
+				_putchar(s[i]);
+				total++;
+			}
 		}
 	}
 	return (total);
