@@ -8,7 +8,7 @@
 
 int specifierHEX(va_list listString)
 {
-	int i, total;
+	int i, total = 0;
 	int *array;
 	unsigned int num = va_arg(listString, unsigned int);
 	unsigned int temporary;

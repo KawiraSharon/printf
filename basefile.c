@@ -12,8 +12,8 @@ int _printf(const char *format, ...)
 		{"d", write_value}, {"i", write_value}, {"c", char_value},
 		{"s", string_value}, {"%", percent_value}, {"r", reverse},
 		{"R", specifierRot13}, {"b", specifier_binary}, {"u", specifierUnsigned},
-		{"o", specifierOctal}, {"h", specifierhex},
-		{"H", specifierHEX}, {"S", specifierS},
+		{"o", specifierOctal}, {"x", specifierhex},
+		{"X", specifierHEX}, {"S", specifierS},
 		{NULL, NULL}
 	};
 

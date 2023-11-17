@@ -2,7 +2,7 @@
 
 /**
  * specifierS - convert specifier
- * @lsitString: arguments
+ * @listString: arguments
  * Return: printed characters
  */
 

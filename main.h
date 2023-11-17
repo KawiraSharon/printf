@@ -14,7 +14,7 @@
  * struct spec_ifier - defines structure for symbols and functions
  *
  * @mtc: The operator is denoted here
- * @u: The function associated is denoted here
+ * @i: The function associated is denoted here
  */
 typedef struct spec_ifier
 {
