@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * base_len - calculate binary number length
+ * find_base - calculate binary number length
  * @num: number we are looking len for
  * @base: base being used
  * Return: positive int for len
@@ -49,7 +49,7 @@ char *write_len(char *s)
 }
 
 /**
- * put_base - chars to be passed to console
+ * new_base - chars to be passed to console
  * @str: char pointer being parsed
  */
 void new_base(char *str)
@@ -65,7 +65,7 @@ void new_base(char *str)
  * _memcpy - clone of memcpy to copy memory area
  * @dest: intended destination for paste
  * @source: the source from which to copy
- * @j: bytes being copied by use of _memcpy
+ * @n: bytes being copied by use of _memcpy
  * Return: destination pointer
  */
 char *_memcpy(char *dest, char *source, unsigned int n)
