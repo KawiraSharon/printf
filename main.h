@@ -38,12 +38,13 @@ int specifierUnsigned(va_list listString);
 int specifierOctal(va_list listString);
 int specifierhex(va_list listString);
 int specifierHEX(va_list listString);
-int specifierS(va_list listString);
+/*int specifierS(va_list listString);*/
 int specifierP(va_list listString);
 int specifierhexP(unsigned long int num);
 char *match(unsigned long int number, int b_Ase, int lower_Alpha);
 int string_value(va_list stringList);
 int isNonAlphaNumeric(char d);
+int specifier_String(va_list list_S);
 
 /*binary task helper functions*/
 int specifier_binary(va_list list_bin);

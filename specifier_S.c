@@ -2,7 +2,7 @@
 
 /**
  * specifier_String - print specific string defined.
- * @list_S:
+ * @list_S: string parameters
  * Return: string length
  */
 
@@ -31,7 +31,7 @@ int specifier_String(va_list list_S)
 }
 
 /**
- * notAlphaNumeric - custom function to find if or not func is alphanumeric
+ * isNonAlphaNumeric - custom function to find if or not func is alphanumeric
  * as is in ascii characters
  * @d: defined input characters
  * Return: validification of whether true or not
@@ -45,7 +45,7 @@ int isNonAlphaNumeric(char d)
  * match - match given no to string
  * @number: input number
  * @b_Ase: base being input
- * @lower_alpha: flag for hexa values that need to be lowercased
+ * @lower_Alpha: flag for hexa values that need to be lowercased
  * Return: the string result
  */
 char *match(unsigned long int number, int b_Ase, int lower_Alpha)
@@ -62,8 +62,8 @@ char *match(unsigned long int number, int b_Ase, int lower_Alpha)
 	do {
 		*--ptrhex = per[number % b_Ase];
 		number /= b_Ase;
-	} 
-	
+	}
+
 	while (number);
 
 	return (ptrhex);

@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 		{"s", string_value}, {"%", percent_value}, {"r", reverse},
 		{"R", specifierRot13}, {"b", specifier_binary}, {"u", specifierUnsigned},
 		{"o", specifierOctal}, {"x", specifierhex}, {"p", specifierP},
-		{"X", specifierHEX}, {"S", specifierS},
+		{"X", specifierHEX}, {"S", specifier_String},
 		{NULL, NULL}
 	};
 

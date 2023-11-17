@@ -4,3 +4,4 @@ filefile
 test
 .vscode
 specifierS
+*.cxx
