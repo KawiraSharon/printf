@@ -2,7 +2,7 @@
 
 /**
  * specifierhexP - handle conversion x
- * @listString: arguments
+ * @num: arguments
  * Return: printed characters
  */
 
