@@ -8,7 +8,7 @@
 #include <limits.h>
 
 #define NUL '\0'
-#define NULL_STRING "(null)"
+#define STRING_NULL "(null)"
 
 /**
  * struct spec_ifier - defines structure for symbols and functions
@@ -24,6 +24,7 @@ typedef struct spec_ifier
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+int _puts(char *ptStr);
 int convert_type(const char *format, spec_ifier form_at[], va_list spec_lyst);
 int write_value(va_list number);
 int di_no(va_list numbers);
@@ -40,8 +41,9 @@ int specifierHEX(va_list listString);
 int specifierS(va_list listString);
 int specifierP(va_list listString);
 int specifierhexP(unsigned long int num);
-
-unsigned int put_base(char *ptrStr);
+char *match(unsigned long int number, int b_Ase, int lower_Alpha);
+int string_value(va_list stringList);
+int isNonAlphaNumeric(char d);
 
 /*binary task helper functions*/
 int specifier_binary(va_list list_bin);

@@ -20,7 +20,6 @@ int _puts(char *ptStr)
 {
 	register short j;
 
-	fflush(stdout);
 	for (j = 0; ptStr[j]; j++)
 		_putchar(ptStr[j]);
 	return (j);
