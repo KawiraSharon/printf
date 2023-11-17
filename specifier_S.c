@@ -10,7 +10,6 @@ int specifier_String(va_list list_S)
 {
 	register short length = 0;
 	char *ptrStr, *m = va_arg(list_S, char *);
-	int counter;
 
 	if (!m)
 		return (_puts(STRING_NULL));
@@ -18,7 +17,7 @@ int specifier_String(va_list list_S)
 	{
 		if (isNonAlphaNumeric(*m))
 		{
-			counter += _puts("\\x");
+			length += _puts("\\x");
 			ptrStr = match(*m, 16, 0);
 			if (!ptrStr[1])
 				length += _putchar('0');

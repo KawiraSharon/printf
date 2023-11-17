@@ -67,6 +67,18 @@ _printf("Can you print an address?\n%p\nNice!\n", (void *)0x7fff5100b6f8);
 _printf("Can you print several addresses?\n%p,%p,%p,%p\nNice!\n", (void *)0x7fff5100b6f8, (void *)0x7faf51f0f608, (void *)0x6ff42510b6f8, (void *)0x7fff510236f8);
 _printf("Can you print an address?\n%p\nNice!\n", (void *)-1);
 _printf("%pppp\n", (void *)0x7fff5100b6f8);
+len = _printf("\n\n%S", "\n");
+len2 = _printf("\n%S", "\x01\x02\x03\x04\x05\x06\x07");
+_printf("Length:[%d, %i]\n", len, len);
+printf("Length:[%d, %i]\n", len2, len2);
+len = _printf("\nCould you print some non-prntable characters?\n%S\nThanks!\n", "Sure:\x1F\x7F\n");
+len2 = _printf("\n%S\n", "No special character.");
+_printf("Length:[%d, %i]\n", len, len);
+printf("Length:[%d, %i]\n", len2, len2);
+len = _printf("");
+len2 = _printf("\n- What did you say?\n- %S\n- That's what I thought.\n", "");
+_printf("Length:[%d, %i]\n", len, len);
+printf("Length:[%d, %i]\n", len2, len2);
 
-    return (0);
+return (0);
 }
