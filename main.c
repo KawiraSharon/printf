@@ -38,8 +38,8 @@ int main(void)
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
-    _printf("Unknown:[%R]\n", "Joseph  Muturi");
-    printf("Unknown:[%r]\n");
+   /* _printf("Unknown:[%R]\n", "Joseph  Muturi");*/
+   /* printf("Unknown:[%r]\n");*/
     _printf("%b\n", 8);
 	_printf("%b\n", 7);
 	_printf("%b\n", 9);

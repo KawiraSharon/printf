@@ -40,6 +40,6 @@ int specifier_binary(va_list list_bin);
 char *conv_spc(char *k);
 char *_memcpy(char *dest, char *source, unsigned int j);
 void put_base(char *ptrStr);
-unsigned int find_base(unsigned int find_len, int len)
+unsigned int find_base(unsigned int find_len, int len);
 
 #endif
