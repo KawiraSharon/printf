@@ -19,7 +19,7 @@
 typedef struct spec_ifier
 {
 	char *mtc;
-	int (*u)(va_list);
+	int (*i)(va_list);
 } spec_ifier;
 
 int _printf(const char *format, ...);
@@ -47,7 +47,6 @@ unsigned int find_base(unsigned int num, int base);
 char *write_len(char *s);
 char *_memcpy(char *dest, char *source, unsigned int n);
 int char_hex(int num, char i);
-void find_base(char *str);
-int char_hex(int num, char i);
+void new_base(char *str);
 
 #endif

@@ -21,7 +21,7 @@ int convert_type(const char *format, spec_ifier form_at[], va_list spec_lyst)
 			{
 				if (format[a + 1] == form_at[b].mtc[0])
 				{
-					f_spec = form_at[b].u(spec_lyst);
+					f_spec = form_at[b].i(spec_lyst);
 					if (f_spec == -1)
 						return (-1);
 					type_written += f_spec;

@@ -10,15 +10,15 @@ int specifier_binary(va_list list_bin)
 	unsigned int y;
 	int m, len;
 	char *ptrStr;
-	char *write_len;
+	char *len_bin;
 
 	y = va_arg(list_bin, unsigned int);
 	if (y == 0)
 		return (_putchar('0'));
 	if (y < 1)
 		return (-1);
-	len_bin = base_len(y, 2);
-	ptrStr = malloc(sizeof(char) * len_bin + 1);
+	len = find_base(y, 2);
+	ptrStr = malloc(sizeof(char) * len + 1);
 	if (ptrStr == NULL)
 		return (-1);
 
@@ -31,11 +31,11 @@ int specifier_binary(va_list list_bin)
 		y = y / 2;
 	}
 	ptrStr[m] = '\0';
-	write_len = put_val(ptrStr);
-	if (write_len == NULL)
+	len_bin = write_len(ptrStr);
+	if (len_bin == NULL)
 		return (-1);
-	put_base(write_len);
+	new_base(len_bin);
 	free(ptrStr);
-	free(write_len);
+	free(len_bin);
 	return (len);
 }

@@ -44,7 +44,7 @@ int main(void)
 	_printf("%b\n", 7);
 	_printf("%b\n", 9);
 	_printf("%b\n", 65536);
-	_printf("%b\n", 0x9000000000000000);
+	_printf("%b\n", 0x9fffffffffffffff);
     _printf("%b\n", 98);
 	return (0);
 }

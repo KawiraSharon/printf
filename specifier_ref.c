@@ -52,7 +52,7 @@ char *write_len(char *s)
  * put_base - chars to be passed to console
  * @str: char pointer being parsed
  */
-void find_base(char *str)
+void new_base(char *str)
 {
 	int x;
 
