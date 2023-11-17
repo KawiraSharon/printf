@@ -9,8 +9,8 @@
 int specifierhexP(unsigned long int num)
 {
 	int i, total = 0;
-	int *array;
-	unsigned int tem = num;
+	unsigned long int *array;
+	unsigned long int tem = num;
 
 	while (num / 16 != 0)
 	{
@@ -18,7 +18,7 @@ int specifierhexP(unsigned long int num)
 		total++;
 	}
 	total++;
-	array = malloc(sizeof(int) * total);
+	array = malloc(sizeof(unsigned long int) * total);
 	if (array == NULL)
 		return (0);
 	for (i = 0; i < total; i++)
