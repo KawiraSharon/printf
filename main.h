@@ -7,6 +7,9 @@
 #include <stdarg.h>
 #include <limits.h>
 
+#define NUL '\0'
+#define NULL_STRING "(null)"
+
 /**
  * struct spec_ifier - defines structure for symbols and functions
  *
@@ -36,10 +39,15 @@ int specifierhex(va_list listString);
 int specifierHEX(va_list listString);
 int specifierS(va_list listString);
 
+unsigned int put_base(char *ptrStr);
+
+/*binary task helper functions*/
 int specifier_binary(va_list list_bin);
-char *conv_spc(char *k);
-char *_memcpy(char *dest, char *source, unsigned int j);
-void put_base(char *ptrStr);
-unsigned int find_base(unsigned int find_len, int len);
+unsigned int find_base(unsigned int num, int base);
+char *write_len(char *s);
+char *_memcpy(char *dest, char *source, unsigned int n);
+int char_hex(int num, char i);
+void find_base(char *str);
+int char_hex(int num, char i);
 
 #endif

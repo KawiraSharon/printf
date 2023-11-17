@@ -6,7 +6,7 @@
  * @base: base being used
  * Return: positive int for len
  */
-unsigned int base_len(unsigned int num, int base)
+unsigned int find_base(unsigned int num, int base)
 {
 	unsigned int j;
 
@@ -52,7 +52,7 @@ char *write_len(char *s)
  * put_base - chars to be passed to console
  * @str: char pointer being parsed
  */
-void put_base(char *str)
+void find_base(char *str)
 {
 	int x;
 
@@ -68,16 +68,15 @@ void put_base(char *str)
  * @j: bytes being copied by use of _memcpy
  * Return: destination pointer
  */
-char *_memcpy(char *dest, char *source, unsigned int j)
+char *_memcpy(char *dest, char *source, unsigned int n)
 {
-	unsigned int j;
+	unsigned int m;
 
-	for (m = 0;m < j; m++)
-		dest[m] = src[j];
-	dest[j] = '\0';
+	for (m = 0; m < n; m++)
+		dest[m] = source[m];
+	dest[m] = '\0';
 	return (dest);
 }
-
 
 /**
  * char_hex - check for hex function being called
@@ -87,13 +86,13 @@ char *_memcpy(char *dest, char *source, unsigned int j)
  */
 int char_hex(int num, char i)
 {
-	char *lowercase_hex = "abcdef";
-	char *uppercase_Hex = "ABCDEF";
+	char *low_hex = "abcdef";
+	char *upper_Hex = "ABCDEF";
 
 	num = num - 10;
 	if (i == 'i')
-		return (lowercase_hex[num]);
+		return (low_hex[num]);
 	else
-		return (lowercase_Hex[num]);
+		return (upper_Hex[num]);
 	return (0);
 }
