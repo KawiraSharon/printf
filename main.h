@@ -38,6 +38,8 @@ int specifierOctal(va_list listString);
 int specifierhex(va_list listString);
 int specifierHEX(va_list listString);
 int specifierS(va_list listString);
+int specifierP(va_list listString);
+int specifierhexP(unsigned long int num);
 
 unsigned int put_base(char *ptrStr);
 
