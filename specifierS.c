@@ -1,3 +1,4 @@
+#if 0 
 #include "main.h"
 
 /**
@@ -35,3 +36,4 @@ int specifierS(va_list listString)
 	}
 	return (total);
 }
+#endif

@@ -2,7 +2,7 @@
 
 /**
  * specifier_String - print specific string defined.
- * @list_S: 
+ * @list_S:
  * Return: string length
  */
 
@@ -36,7 +36,7 @@ int specifier_String(va_list list_S)
  * @d: defined input characters
  * Return: validification of whether true or not
  */
-int isNonAlphaNumeric(char d) 
+int isNonAlphaNumeric(char d)
 {
 	return ((d > 0 && d < 32) || d >= 127);
 }
@@ -58,11 +58,13 @@ char *match(unsigned long int number, int b_Ase, int lower_Alpha)
 		? "0123456789abcdef"
 		: "0123456789ABCDEF";
 	ptrhex = &array[49];
-	*ptrhex= NUL;
+	*ptrhex = NUL;
 	do {
 		*--ptrhex = per[number % b_Ase];
 		number /= b_Ase;
-	} while (number);
+	} 
+	
+	while (number);
 
 	return (ptrhex);
 }
