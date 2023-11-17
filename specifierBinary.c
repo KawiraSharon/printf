@@ -1,34 +1,41 @@
 #include "main.h"
 
 /**
- * specifierBinary - handle unsigned to binary
- * @listString: arguments
- * Return: no of printed characters
+ * specifier_binary - change decimal to binary value
+ * @list_bin: argument list
+ * Return: len of characters written
  */
-
-int specifierBinary(va_list listString)
+int specifier_binary(va_list list_bin)
 {
-	int a[64], total, i, j;
-	unsigned int num;
+	unsigned int y;
+	int m, len;
+	char *ptrStr;
+	char *write_len;
 
-	num = va_arg(listString, unsigned int);
+	y = va_arg(list_bin, unsigned int);
+	if (y == 0)
+		return (_putchar('0'));
+	if (y < 1)
+		return (-1);
+	len_bin = base_len(y, 2);
+	ptrStr = malloc(sizeof(char) * len_bin + 1);
+	if (ptrStr == NULL)
+		return (-1);
 
-	if (!num)
+	for (m = 0; y > 0; m++)
 	{
-		_putchar('0');
-		return (1);
+		if (y % 2 == 0)
+			ptrStr[m] = '0';
+		else
+			ptrStr[m] = '1';
+		y = y / 2;
 	}
-	for  (i = 0; num > 0; i++)
-	{
-		a[i] = num % 2;
-		num /= 2;
-	}
-
-	for (j = i - 1; j >= 0; j--)
-	{
-		_putchar(a[j] + '0');
-		total++;
-	}
-
-	return (total);
+	ptrStr[m] = '\0';
+	write_len = put_val(ptrStr);
+	if (write_len == NULL)
+		return (-1);
+	put_base(write_len);
+	free(ptrStr);
+	free(write_len);
+	return (len);
 }

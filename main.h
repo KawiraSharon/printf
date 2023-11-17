@@ -27,13 +27,19 @@ int di_no(va_list numbers);
 int char_value(va_list char_list);
 int string_value(va_list stringList);
 int percent_value(va_list);
+
 int reverse(va_list stringList);
 int specifierRot13(va_list stringList);
-int specifierBinary(va_list listString);
 int specifierUnsigned(va_list listString);
 int specifierOctal(va_list listString);
 int specifierhex(va_list listString);
 int specifierHEX(va_list listString);
 int specifierS(va_list listString);
+
+int specifier_binary(va_list list_bin);
+char *conv_spc(char *k);
+char *_memcpy(char *dest, char *source, unsigned int j);
+void put_base(char *ptrStr);
+unsigned int find_base(unsigned int find_len, int len)
 
 #endif
