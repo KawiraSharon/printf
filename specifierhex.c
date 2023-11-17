@@ -11,7 +11,7 @@ int specifierhex(va_list listString)
 	int i, total = 0;
 	int *array;
 	unsigned int num = va_arg(listString, unsigned int);
-	unsigned int temporary = num;
+	unsigned int tem = num;
 
 	while (num / 16 != 0)
 	{
@@ -24,18 +24,20 @@ int specifierhex(va_list listString)
 		return (0);
 	for (i = 0; i < total; i++)
 	{
-		array[i] = temporary % 16;
-		temporary /= 16;
+		array[i] = tem % 16;
+		tem = tem / 16;
 	}
-	for (i =  total - 1; i >= 0; i++)
+	for (i = total - 1; i >= 0; i--)
 	{
 		if (array[i] > 9)
 		{
-			array[i] += 39;
+			array[i] = array[i] - 9;
+			_putchar(array[i] + 96);
+		} else
+		{
+			_putchar(array[i] + '0');
 		}
-		_putchar(array[i] + '0');
 	}
 	free(array);
-
 	return (total);
 }
