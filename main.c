@@ -56,6 +56,17 @@ int main(void)
   printf("\n");
 _printf("There is %x bytes in %x KB\n", 1024, 1);
 printf("\n");
+printf("\n");
+printf("\n");
+printf("\n");
+_printf("%p", (void *)0x7fff5100b608);
+
+_printf("%p", NULL);
+
+_printf("Can you print an address?\n%p\nNice!\n", (void *)0x7fff5100b6f8);
+_printf("Can you print several addresses?\n%p,%p,%p,%p\nNice!\n", (void *)0x7fff5100b6f8, (void *)0x7faf51f0f608, (void *)0x6ff42510b6f8, (void *)0x7fff510236f8);
+_printf("Can you print an address?\n%p\nNice!\n", (void *)-1);
+_printf("%pppp\n", (void *)0x7fff5100b6f8);
 
     return (0);
 }

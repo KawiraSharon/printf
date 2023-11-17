@@ -2,7 +2,7 @@
 
 /**
  * specifierP - print pointer
- * @listStrign: arguments
+ * @listString: arguments
  * Return: no of printed arguments
  */
 
